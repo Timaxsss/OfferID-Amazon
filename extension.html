@@ -6,43 +6,50 @@
     <title>R Get - Amazon</title>
     <style>
         body {
-            width: 200px;
+            width: 250px;
             text-align: center;
-            font-family: Arial, sans-serif;
-            padding: 10px;
-            background-color: white;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            padding: 15px;
+            background-color: #1a1a1a;
+            color: #ffffff;
         }
-        button {
+        .action-button {
             width: 100%;
-            padding: 10px;
-            margin: 5px 0;
+            padding: 12px;
+            margin: 8px 0;
             border: none;
             cursor: pointer;
             font-size: 14px;
-            border-radius: 5px;
-            transition: 0.3s;
+            border-radius: 6px;
+            transition: all 0.3s ease;
             background-color: #fe339c;
-            color: white;
+            color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
-        button:hover {
-            opacity: 0.8;
+        .action-button:hover {
+            background-color: #e62d8c;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-        h3 {
-            color: #333;
-            margin-bottom: 15px;
+        .title {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
         }
-        #status {
-            font-size: 12px;
-            color: #666;
-            margin-top: 10px;
+        .status-message {
+            font-size: 13px;
+            color: #b3b3b3;
+            margin-top: 12px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
-    <h3>R Get - Amazon</h3>
-    <button id="copy-asin">Copy ASIN</button>
-    <button id="copy-offer-id">Copy Offer ID</button>
-    <p id="status"></p>
+    <h3 class="title">R Get - Amazon</h3>
+    <button id="extract-asin" class="action-button">Copy ASIN</button>
+    <button id="extract-offer-id" class="action-button">Copy Offer ID</button>
+    <p id="status-message" class="status-message"></p>
     <script src="extension.js"></script>
 </body>
 </html>

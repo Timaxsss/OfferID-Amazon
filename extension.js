@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     const [currentTab] = await chrome.tabs.query({ active: true, currentWindow: true });
   
     if (!currentTab || !currentTab.url.includes("amazon.fr")) {
-      document.getElementById("status").innerText =
+      document.getElementById("status-message").innerText =
         "⚠️ Please open an Amazon product page.";
       return;
     }
@@ -19,32 +19,32 @@ document.addEventListener("DOMContentLoaded", async function () {
           !scriptResult[0] ||
           !scriptResult[0].result
         ) {
-          document.getElementById("status").innerText =
+          document.getElementById("status-message").innerText =
             "⚠️ Unable to extract data.";
           return;
         }
   
         const { productAsin, productOfferId } = scriptResult[0].result;
         if (!productAsin || !productOfferId) {
-          document.getElementById("status").innerText =
+          document.getElementById("status-message").innerText =
             "⚠️ ASIN or Offer ID not found.";
           return;
         }
   
-        // Copy button configuration
+        // Button configuration
         document
-          .getElementById("copy-asin")
+          .getElementById("extract-asin")
           .addEventListener("click", () => {
             copyToClipboard(productAsin, "ASIN copied successfully");
           });
   
         document
-          .getElementById("copy-offer-id")
+          .getElementById("extract-offer-id")
           .addEventListener("click", () => {
             copyToClipboard(productOfferId, "Offer ID copied successfully");
           });
   
-        document.getElementById("status").innerText = "✅ Data extracted successfully";
+        document.getElementById("status-message").innerText = "✅ Data extracted successfully";
       }
     );
   });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
   function copyToClipboard(textToCopy, successMessage) {
     navigator.clipboard.writeText(textToCopy).then(() => {
-      const statusElement = document.getElementById("status");
+      const statusElement = document.getElementById("status-message");
       statusElement.innerText = `📋 ${successMessage}`;
       setTimeout(() => {
         statusElement.innerText = "✅ Data extracted successfully";
