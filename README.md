@@ -1,4 +1,6 @@
-![R Get Extension Icon](logo.png)
+<div align="center">
+  <img src="logo.png" alt="R Get Extension Icon">
+</div>
 
 # R Get - Amazon ASIN & Offer ID Extractor
 
