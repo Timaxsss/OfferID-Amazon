@@ -21,17 +21,17 @@ A Chrome extension that allows you to quickly copy ASIN and Offer ID from Amazon
 ## How it Works
 
 <div align="center">
-  <img src="1.png" alt="Extension Interface" width="250">
+  <img src="screens/1.png" alt="Extension Interface" width="250">
   <p><em>When you open the extension on a product page, you'll see the "Data extracted successfully" message</em></p>
 </div>
 
 <div align="center">
-  <img src="2.png" alt="ASIN Copied" width="250">
+  <img src="screens/2.png" alt="ASIN Copied" width="250">
   <p><em>Click the "Copy ASIN" button to copy the product's ASIN to your clipboard</em></p>
 </div>
 
 <div align="center">
-  <img src="3.png" alt="Offer ID Copied" width="250">
+  <img src="screens/3.png" alt="Offer ID Copied" width="250">
   <p><em>Click the "Copy Offer ID" button to copy the product's Offer ID to your clipboard</em></p>
 </div>
 
