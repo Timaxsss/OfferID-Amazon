@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "R Get",
+    "version": "0.1",
+    "description": "Quickly copy ASIN and Offer ID from Amazon product pages.",
+    "permissions": ["activeTab", "clipboardWrite", "scripting"],
+    "host_permissions": [
+      "https://www.amazon.fr/*",
+      "https://www.amazon.de/*",
+      "https://www.amazon.co.uk/*",
+      "https://www.amazon.com/*",
+      "https://www.amazon.it/*",
+      "https://www.amazon.es/*",
+      "https://www.amazon.nl/*",
+      "https://www.amazon.pl/*"
+    ],
+    "action": {
+      "default_popup": "extension.html",
+      "default_icon": {
+        "16": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+      }
+    }
+}
