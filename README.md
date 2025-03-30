@@ -11,8 +11,8 @@ A Chrome extension that allows you to quickly copy ASIN and Offer ID from Amazon
 - Extract ASIN (Amazon Standard Identification Number) from product pages
 - Copy Offer ID from Amazon seller pages
 - Works on multiple Amazon domains:
-  - amazon.de
   - amazon.fr
+  - amazon.de
   - amazon.com
   - amazon.co.uk
   - amazon.it
