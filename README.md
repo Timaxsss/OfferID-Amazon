@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" alt="R Get Extension Icon">
+  <img src="screens/4266cd76-9596-4bb2-9476-91af6276a934.png" alt="R Get Extension Icon">
 </div>
 
 # R Get - Amazon ASIN & Offer ID Extractor
